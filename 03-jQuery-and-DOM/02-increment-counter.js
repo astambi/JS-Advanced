@@ -6,11 +6,11 @@ function increment(selector) {
     let incrementBtn = $('<button>Increment</button>')
                     .addClass('btn')
                     .attr('id', 'incrementBtn')
-                    .on('click', () => clickIncrementBtn());
+                    .click(clickIncrementBtn);  // .on('click', clickIncrementBtn);
     let addBtn = $('<button>Add</button>')
                     .addClass('btn')
                     .attr('id', 'addBtn')
-                    .on('click', () => clickAddBtn());
+                    .click(clickAddBtn);        // .on('click', clickAddBtn);
     let list = $('<ul></ul>')
                     .addClass('results');
 
