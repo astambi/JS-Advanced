@@ -1,0 +1,7 @@
+.item {
+    border: 1px solid #DDD
+}
+.big {
+    font-size: 1.5em;
+    font-weight: bold;
+}
