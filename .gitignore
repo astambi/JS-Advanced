@@ -1,3 +1,7 @@
 # JetBrains 
 .idea/
 *.sln.iml
+
+# Node Dependency directories
+node_modules
+jspm_packages
