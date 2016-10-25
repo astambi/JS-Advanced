@@ -21,7 +21,7 @@ function timer() {
         clearInterval(timerInterval);
         isIncrementing = false;
     }
-    
+
     function incrementTime() {
         time++;
         let hoursText = ('0' + Math.trunc(time / 3600)).slice(-2);
