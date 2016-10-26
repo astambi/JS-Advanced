@@ -34,14 +34,14 @@ describe("createCalculator()", function() {
         let value = calc.get();
         expect(value).to.be.equal(2);
     });
-    // it("should return NaN after {add 'hello'}", function() {
-    //     calc.add('hello');
-    //     let value = calc.get();
-    //     expect(value).to.be.equal(NaN);
-    // });
-    // it("should return NaN after {subtract 'hello'}", function() {
-    //     calc.subtract('hello');
-    //     let value = calc.get();
-    //     expect(value).to.be.equal(NaN);
-    // });
+    it("should return NaN after {add 'hello'}", function() {
+        calc.add('hello');
+        let value = calc.get();
+        expect(value).to.be.NaN;
+    });
+    it("should return NaN after {subtract 'hello'}", function() {
+        calc.subtract('hello');
+        let value = calc.get();
+        expect(value).to.be.NaN;
+    });
 });

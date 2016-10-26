@@ -16,7 +16,7 @@ describe("sum(arr) - sum array of numbers", function() {
     it("should return 3 for [1.5, 2.5, -1]", function() {
         expect(sum([1.5, 2.5, -1])).to.be.equal(3);
     });
-    // it("should return NaN for invalid data", function() {
-    // expect(sum("invalid data")).to.be.equal('NaN');
-    // });
+    it("should return NaN for invalid data", function() {
+    expect(sum("invalid data")).to.be.NaN;
+    });
 });
