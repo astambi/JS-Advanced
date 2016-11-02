@@ -6,6 +6,7 @@ function tickets(ticketsData, sortingCriteria) {
             this.status = status;
         }
     }
+
     let tickets = [];
     for (let item of ticketsData) {
         let tokens = item.split('|'); // <destinationName>|<price>|<status>
