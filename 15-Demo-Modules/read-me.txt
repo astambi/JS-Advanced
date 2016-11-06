@@ -1,0 +1,31 @@
+1. Install RequireJS
+npm install --save requirejs
+
+2. Install SystemJS
+npm install --save systemjs
+
+3 & 4. Babel & RequireJS
+Install Babel-CLI globally
+npm install --save-dev babel-cli -g
+
+Configure Babel Filewatcher:
+Arguments:	    $FilePathRelativeToProjectRoot$ --source-maps --out-dir build
+Working dir:    $ProjectFileDir$
+Output paths:	build
+
+3. Babel & RequireJS
+
+Install Babel Plugin for AMD and RequireJS
+npm install --save-dev babel-plugin-transform-es2015-modules-amd
+
+Configure .babellrc
+echo { "plugins": ["transform-es2015-modules-amd"] } > .babelrc
+
+4. Babel & SystemJS
+
+Install Babel Plugin for CommonJS and SystemJS
+npm install --save-dev babel-plugin-transform-es2015-modules-commonjs
+
+Configure .babellrc
+echo { "plugins": ["transform-es2015-modules-commonjs"] } > .babelrc
+

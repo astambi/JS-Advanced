@@ -1,0 +1,12 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": "^2.3.2",
+    "systemjs": "^0.19.40"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-amd": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0"
+  }
+}
