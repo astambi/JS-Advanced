@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards</title>
+    <style>
+        div.card {
+            display: inline-block; padding: 10px; margin: 10px;
+            width: 50px; height: 80px; background: #EEE;
+            border: 3px solid #DDD; border-radius: 5px;
+            font-size: 18pt; text-align: center; line-height: 75px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="cards.js"></script>
+</head>
+<body>
+<div id="main"></div>
+
+<script>
+    $(function() {
+        let builder = cardDeckBuilder("#main");
+//        builder.addCard("10", "D");
+//        builder.addCard("K", "S");
+//        builder.addCard("Q", "H");
+//        builder.addCard("4", "C");
+        builder.addCard("1", "C");  // invalid card
+        builder.addCard("2", "X");  // invalid card
+        builder.addCard("2", "C");
+        builder.addCard("3", "D");
+        builder.addCard("4", "S");
+        builder.addCard("5", "H");
+        builder.addCard("6", "C");
+        builder.addCard("7", "D");
+        builder.addCard("8", "S");
+        builder.addCard("9", "H");
+        builder.addCard("10", "C");
+        builder.addCard("10", "X"); // invalid card
+        builder.addCard("J", "D");
+        builder.addCard("Q", "S");
+        builder.addCard("K", "H");
+        builder.addCard("A", "C");
+    });
+</script>
+</body>
+</html>
